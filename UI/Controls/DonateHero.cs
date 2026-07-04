@@ -15,7 +15,7 @@ namespace BhModule.Community.Pathing.UI.Controls {
 
         public DonateHero() {
             _donateButton = new BlueButton() {
-                Text = "Donate",
+                Text = Strings.DonateHero_DonateButton,
                 Parent = this,
             };
 
@@ -41,7 +41,7 @@ namespace BhModule.Community.Pathing.UI.Controls {
             spriteBatch.DrawOnCtrl(this, _heartTexture, new Rectangle(-8, -8, 64, 64));
             spriteBatch.DrawOnCtrl(this, _heartTexture, new Rectangle(-8 + 32, -8, 64, 64));
             spriteBatch.DrawOnCtrl(this, _heartTexture, new Rectangle(-8 + 64, -8, 64, 64));
-            spriteBatch.DrawStringOnCtrl(this, "Consider  helping  Freesnöw  with  server  expenses:", GameService.Content.DefaultFont18, bounds, Color.White, false, HorizontalAlignment.Center);
+            spriteBatch.DrawStringOnCtrl(this, Strings.DonateHero_DonateDesc, GameService.Content.DefaultFont18, bounds, Color.White, false, HorizontalAlignment.Center);
         }
 
     }

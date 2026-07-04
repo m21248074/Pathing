@@ -44,7 +44,7 @@ namespace BhModule.Community.Pathing.UI.Views {
 
         protected override void Build(Container buildPanel) {
             this._searchBox = new TextBox {
-                PlaceholderText = "Search markers or insert path...",
+                PlaceholderText = Strings.Setting_CategoryTreeSearchBox,
                 Parent = buildPanel,
                 Location = new Point(0, 10),
                 Width = buildPanel.ContentRegion.Width - 25,
@@ -54,7 +54,7 @@ namespace BhModule.Community.Pathing.UI.Views {
 
             this._packsNotInitializedLabel = new Label
             {
-                Text           = "Please enter the game to load the marker packs.",
+                Text           = Strings.Setting_PacksNotInitializedLabel,
                 Font           = GameService.Content.DefaultFont18,
                 AutoSizeHeight = true,
                 AutoSizeWidth  = true,
@@ -65,7 +65,7 @@ namespace BhModule.Community.Pathing.UI.Views {
 
             this._packsNotLoadedLabel = new Label
             {
-                Text           = "No marker packs have been loaded.",
+                Text           = Strings.Setting_PacksNotLoadedLabel,
                 Font           = GameService.Content.DefaultFont18,
                 AutoSizeHeight = true,
                 AutoSizeWidth  = true,
@@ -76,7 +76,7 @@ namespace BhModule.Community.Pathing.UI.Views {
 
             this._searchStatusLabel = new Label
             {
-                Text = "No categories found...",
+                Text = Strings.Setting_SearchStatusLabel,
                 Size = new Point(100, 20),
                 Font = GameService.Content.DefaultFont18,
                 AutoSizeHeight = true,
@@ -89,7 +89,7 @@ namespace BhModule.Community.Pathing.UI.Views {
             this._helpTextLabel = new Label()
             {
                 Parent         = buildPanel,
-                Text           = "Right click on categories for options.",
+                Text           = Strings.Setting_HelpTextLabel,
                 AutoSizeHeight = true,
                 AutoSizeWidth  = true,
                 StrokeText     = true,

@@ -331,6 +331,7 @@
     <Compile Include="Utility\FileUtil.cs" />
     <Compile Include="Utility\GuidExtensions.cs" />
     <Compile Include="Utility\Gw2SharpModelExtensions.cs" />
+    <Compile Include="Utility\LocalizedDescriptionAttribute.cs" />
     <Compile Include="Utility\MapNavUtil.cs" />
     <Compile Include="Utility\PackHandlingUtil.cs" />
     <Compile Include="Utility\PickingUtil.cs" />
@@ -721,6 +722,7 @@
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Strings.zh.resx" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

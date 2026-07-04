@@ -89,7 +89,7 @@ namespace BhModule.Community.Pathing.UI.Controls {
 
         private void ShowSearch() {
             var searchMarker = new ContextMenuStripItem() {
-                Text = "Search",
+                Text = Strings.CategoryContextMenuStrip_SearchMarker,
                 BackgroundColor = Color.LightBlue * 0.1f
             };
 
@@ -150,7 +150,7 @@ namespace BhModule.Community.Pathing.UI.Controls {
             if (skipped > 0 && _packState.UserConfiguration.PackShowWhenCategoriesAreFiltered.Value) {
                 var showAllSkippedCategories = new ContextMenuStripItem() {
                     // LOCALIZE: Skipped categories menu item
-                    Text = $"{skipped} Categories Are Hidden",
+                    Text = string.Format(Strings.CategoryContextMenuStrip_ShowAllSkippedCategories, skipped),
                     Enabled = false,
                     CanCheck = true,
                     BasicTooltipText = string.Format(Strings.Info_HiddenCategories, _packState.UserConfiguration.PackEnableSmartCategoryFilter.DisplayName)

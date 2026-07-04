@@ -98,7 +98,7 @@ namespace BhModule.Community.Pathing.MarkerPackRepo {
         }
 
         private async Task<MarkerPackPkg[]> LoadMarkerPackPkgs(IProgress<string> progress) {
-            progress.Report("Requesting latest list of marker packs...");
+            progress.Report(Strings.MarkerPackRepo_Progress);
 
             (MarkerPackPkg[] releases, var exception) = await RequestMarkerPacks();
 

@@ -5,7 +5,7 @@
   "package": "Pathing.dll",
   "manifest_version": 1,
 
-  "description": "Display markers and trails in-game.  Supports both .zip and .taco format markers.\n\nCheck out our guide: https://link.blishhud.com/pathingsetup",
+  "description": "於遊戲內顯示標記與路徑。 支援 .zip 及 .taco 格式的標記檔案。\n\n查看指南: https://link.blishhud.com/pathingsetup",
   "dependencies": {
     "bh.blishhud": ">=1.0.0"
   },
@@ -20,11 +20,11 @@
   "api_permissions": {
     "account": {
       "optional": true,
-      "details": "Necessary to keep track of achievement based markers states."
+      "details": "須追蹤成就類標記的狀態。"
     },
     "progression": {
       "optional": true,
-      "details": "Necessary to keep track of achievement based markers states."
+      "details": "須追蹤成就類標記的狀態。"
     }
   },
   "directories": [ "markers" ]

@@ -46,14 +46,14 @@ namespace BhModule.Community.Pathing.UI.Controls {
             _markerPackPkg = markerPackPkg;
 
             if (markerPackPkg.LastUpdate != default) {
-                _lastUpdateStr = $"Updated {markerPackPkg.LastUpdate.Humanize()}";
+                _lastUpdateStr = string.Format(Strings.MarkerPackHero_LastUpdateStr, markerPackPkg.LastUpdate.Humanize());
             }
 
             this.SuspendLayout();
 
             _keepUpdatedCheckbox = new Checkbox() {
-                Text             = "Keep Updated",
-                BasicTooltipText = "If checked, new pack versions will be automatically downloaded on launch.",
+                Text             = Strings.Setting_KeepUpdatedCheckbox,
+                BasicTooltipText = Strings.Setting_KeepUpdatedCheckboxDesc,
                 Parent           = this,
                 Checked          = markerPackPkg.AutoUpdate.Value
             };
@@ -78,13 +78,13 @@ namespace BhModule.Community.Pathing.UI.Controls {
             };
 
             _deleteButton = new BlueButton() {
-                Text   = "Delete",
+                Text   = Strings.MarkerPackHero_DeleteButton,
                 Width  = 90,
                 Parent = this
             };
 
             if (_markerPackPkg.TotalDownloads > 0) {
-                this.BasicTooltipText = $"Approx. {_markerPackPkg.TotalDownloads:n0} downloads per day";
+                this.BasicTooltipText = string.Format(Strings.MarkerPackHero_BasicTooltipText, _markerPackPkg.TotalDownloads);
             }
 
             _downloadButton.Click                   += DownloadButtonOnClick;
@@ -125,7 +125,7 @@ namespace BhModule.Community.Pathing.UI.Controls {
         }
 
         private void UpdateControlStates() {
-            string downloadText    = "Download";
+            string downloadText    = Strings.MarkerPackHero_Download;
             bool   downloadEnabled = true;
 
             _isUpToDate = false;
@@ -137,12 +137,12 @@ namespace BhModule.Community.Pathing.UI.Controls {
                 _deleteButton.Enabled = true;
 
                 if (_module.PackInitiator.IsLoading) {
-                    downloadText    = "Loading...";
+                    downloadText    = Strings.MarkerPackHero_IsLoading;
                 } else if (_markerPackPkg.LastUpdate > _markerPackPkg.CurrentDownloadDate) {
-                    downloadText    = "Update";
+                    downloadText    = Strings.MarkerPackHero_Update;
                     downloadEnabled = true;
                 } else {
-                    downloadText = "Up to Date";
+                    downloadText = Strings.MarkerPackHero_UpToDate;
                     _isUpToDate  = true;
                 }
             } else {
@@ -150,7 +150,7 @@ namespace BhModule.Community.Pathing.UI.Controls {
             }
 
             if (_markerPackPkg.IsDownloading) {
-                downloadText    = $"Downloading...";
+                downloadText    = Strings.MarkerPackHero_IsDownloading;
                 downloadEnabled = false;
 
                 _deleteButton.Enabled = false;
@@ -228,7 +228,7 @@ namespace BhModule.Community.Pathing.UI.Controls {
             if (_markerPackPkg.IsDownloading) {
                 spriteBatch.DrawStringOnCtrl(this, $"{Math.Min(_markerPackPkg.DownloadProgress, 99)}%", GameService.Content.DefaultFont14, _downloadButton.LocalBounds, StandardColors.Default, false, HorizontalAlignment.Center);
             } else if (_isUpToDate) {
-                spriteBatch.DrawStringOnCtrl(this, "Up to Date", GameService.Content.DefaultFont14, _downloadButton.LocalBounds, StandardColors.Default, false, HorizontalAlignment.Center);
+                spriteBatch.DrawStringOnCtrl(this, Strings.MarkerPackHero_UpToDate, GameService.Content.DefaultFont14, _downloadButton.LocalBounds, StandardColors.Default, false, HorizontalAlignment.Center);
             }
         }
 

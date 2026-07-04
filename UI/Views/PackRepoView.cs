@@ -32,7 +32,7 @@ namespace BhModule.Community.Pathing.UI.Views {
 
         protected override void Build(Container buildPanel) {
             _searchBox = new TextBox() {
-                PlaceholderText = "Search marker packs...",
+                PlaceholderText = Strings.Setting_PackRepoSearchBox,
                 Parent = buildPanel,
                 Location = new Point(20, 10),
                 Width = buildPanel.ContentRegion.Width - 40,
@@ -41,8 +41,8 @@ namespace BhModule.Community.Pathing.UI.Views {
             _searchBox.TextChanged += SearchBoxTextChanged;
 
             _onlyShowCurrentMap = new Checkbox() {
-                Text = "Current Map Only",
-                BasicTooltipText = "If checked, only marker packs with marker or trails for the current map will be shown.",
+                Text = Strings.Setting_OnlyShowCurrentMap,
+                BasicTooltipText = Strings.Setting_OnlyShowCurrentMapDesc,
                 Parent = buildPanel,
                 Location = new Point(_searchBox.Left + 8, _searchBox.Bottom + 8)
             };

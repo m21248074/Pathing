@@ -68,23 +68,23 @@ namespace BhModule.Community.Pathing {
 
         private IEnumerable<ContextMenuStripItem> GetPackLoadSettings(PackWrapper pack) {
             // Always Load
-            yield return new SimpleContextMenuStripItem("Always Load", (e) => pack.AlwaysLoad.Value = e, pack.AlwaysLoad.Value);
+            yield return new SimpleContextMenuStripItem(Strings.PackInitiator_AlwaysLoad, (e) => pack.AlwaysLoad.Value = e, pack.AlwaysLoad.Value);
 
             // Load Manually
             if (pack.IsLoaded) {
                 yield return new ContextMenuStripItem() {
-                    Text = $"Loaded in {pack.LoadTime} milliseconds",
+                    Text = string.Format(Strings.PackInitiator_LoadManuallyIsLoaded, pack.LoadTime),
                     Enabled = false
                 };
             } else {
-                yield return new SimpleContextMenuStripItem("Load Marker Pack", () => {
+                yield return new SimpleContextMenuStripItem(Strings.PackInitiator_LoadManually, () => {
                     pack.ForceLoad = true;
                     ReloadPacks();
                 });
             }
 
             // Delete Pack
-            yield return new SimpleContextMenuStripItem("Delete Pack", () => {
+            yield return new SimpleContextMenuStripItem(Strings.PackInitiator_DeletePack, () => {
                 if (pack.Package != null) {
                     Utility.PackHandlingUtil.DeletePack(_module, pack.Package);
                 }
@@ -113,13 +113,13 @@ namespace BhModule.Community.Pathing {
             yield return new ContextMenuStripDivider();
 
             // Reload Markers
-            yield return new SimpleContextMenuStripItem("Reload Marker Packs", ReloadPacks) {
+            yield return new SimpleContextMenuStripItem(Strings.PackInitiator_ReloadMarkers, ReloadPacks) {
                 Enabled = !this.IsLoading && _packState.CurrentMapId > 0,
                 BasicTooltipText = _module.Settings.KeyBindReloadMarkerPacks.Value.PrimaryKey != Microsoft.Xna.Framework.Input.Keys.None ? $"Keybind: {_module.Settings.KeyBindReloadMarkerPacks.Value.GetBindingDisplayText()}" : null
             };
 
             // Unload Markers
-            yield return new SimpleContextMenuStripItem("Unload Marker Packs", async () => {
+            yield return new SimpleContextMenuStripItem(Strings.PackInitiator_UnloadMarkers, async () => {
                 if (_packState.CurrentMapId < 0) return;
                 await UnloadStateAndCollection();
             }) {
@@ -127,7 +127,7 @@ namespace BhModule.Community.Pathing {
             };
 
             // Download Marker Packs
-            yield return new SimpleContextMenuStripItem("Download Marker Packs", () => {
+            yield return new SimpleContextMenuStripItem(Strings.PackInitiator_DownloadMarkerPacks, () => {
                 _module.SettingsWindow.SelectedTab = _module.MarkerRepoTab;
                 _module.SettingsWindow.Show();
             }); ;
@@ -145,7 +145,7 @@ namespace BhModule.Community.Pathing {
                              && _sharedPackCollection.Categories.Any(category => !string.IsNullOrWhiteSpace(category.DisplayName));
 
             var allMarkers = new ContextMenuStripItem() {
-                Text = "All Markers", // TODO: Localize "All Markers"
+                Text = Strings.PackInitiator_AllMarkers, // TODO: Localize "All Markers"
                 CanCheck = true,
                 Checked = _module.Settings.GlobalPathablesEnabled.Value,
                 Submenu = isAnyMarkers
@@ -159,7 +159,7 @@ namespace BhModule.Community.Pathing {
 
             // Manage Packs
             var packs = new ContextMenuStripItem() {
-                Text = "Manage Marker Packs",
+                Text = Strings.PackInitiator_ManagePacks,
                 Submenu = new ContextMenuStrip(GetPackToggles)
             };
 
@@ -269,7 +269,7 @@ namespace BhModule.Community.Pathing {
             var packTimings = new List<(Pack Pack, long LoadDuration)>();
 
             // TODO: Localize the loading messages.
-            _loadingIndicator.Report("Loading marker packs...");
+            _loadingIndicator.Report(Strings.PackInitiator_LoadingIndicator1);
 
             await PrepareState(mapId);
 
@@ -286,7 +286,7 @@ namespace BhModule.Community.Pathing {
                 try {
                     var packTimer = Stopwatch.StartNew();
 
-                    _loadingIndicator.Report($"Loading {pack.Pack.Name}...");
+                    _loadingIndicator.Report(string.Format(Strings.PackInitiator_LoadingIndicator2, pack.Pack.Name));
 
                     await pack.Pack.LoadMapAsync(mapId, _sharedPackCollection, _packReaderSettings);
 
@@ -302,7 +302,7 @@ namespace BhModule.Community.Pathing {
                 }
             }
 
-            _loadingIndicator.Report("Finalizing marker collection...");
+            _loadingIndicator.Report(Strings.PackInitiator_LoadingIndicator3);
 
             try {
                 await _packState.LoadPackCollection(_sharedPackCollection);
@@ -313,7 +313,7 @@ namespace BhModule.Community.Pathing {
 
             // We only load scripts if they're enabled.
             if (_packState.Module.Settings.ScriptsEnabled.Value) {
-                _loadingIndicator.Report("Loading scripts...");
+                _loadingIndicator.Report(Strings.PackInitiator_LoadingIndicator4);
 
                 foreach (var pack in packs) {
                     if (!pack.AlwaysLoad.Value && !pack.ForceLoad) {

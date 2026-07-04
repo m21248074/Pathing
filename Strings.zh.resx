@@ -117,362 +117,360 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="General_UiName" xml:space="preserve">
-    <value>Pathing</value>
-  </data>
   <data name="Window_MainSettingsTab" xml:space="preserve">
-    <value>Marker Options</value>
+    <value>標記選項</value>
   </data>
   <data name="Window_MapSettingsTab" xml:space="preserve">
-    <value>Map Options</value>
+    <value>地圖選項</value>
   </data>
   <data name="Setting_PackMaxTrailAnimationSpeed" xml:space="preserve">
-    <value>Max Trail Animation Speed</value>
+    <value>路徑動畫速度上限</value>
   </data>
   <data name="Setting_PackMaxOpacityOverride" xml:space="preserve">
-    <value>Max Opacity Override</value>
+    <value>不透明度上限覆寫</value>
   </data>
   <data name="Setting_PackMaxViewDistance" xml:space="preserve">
-    <value>Max View Distance</value>
+    <value>最大可視距離</value>
   </data>
   <data name="Setting_PackFadeTrailsAroundCharacter" xml:space="preserve">
-    <value>Fade Trails Around Character</value>
+    <value>淡化角色周圍的路徑</value>
   </data>
   <data name="Setting_PackFadeMarkersBetweenCharacterAndCamera" xml:space="preserve">
-    <value>Fade Markers Between Character and Camera</value>
+    <value>淡化角色與視角之間的標記</value>
   </data>
   <data name="Setting_PackAllowMarkersToAutomaticallyHide" xml:space="preserve">
-    <value>Allow Markers to Automatically Hide</value>
+    <value>允許標記自動隱藏</value>
   </data>
   <data name="Setting_PackMarkerConsentToClipboard" xml:space="preserve">
-    <value>Allow Markers to Set Clipboard</value>
+    <value>允許標記設定剪貼簿</value>
   </data>
   <data name="Setting_PackAllowMarkersToAnimate" xml:space="preserve">
-    <value>Allow Markers to Animate</value>
-  </data>
-  <data name="Setting_PackShowCategoriesFromAllMaps" xml:space="preserve">
-    <value>Show Categories From All Maps</value>
+    <value>允許標記執行動畫</value>
   </data>
   <data name="Setting_MapShowMarkersOnFullscreen" xml:space="preserve">
-    <value>Show Markers on Fullscreen Map</value>
+    <value>於全螢幕地圖顯示標記</value>
   </data>
   <data name="Setting_MapShowMarkersOnCompass" xml:space="preserve">
-    <value>Show Markers on the Minimap</value>
+    <value>於小地圖顯示標記</value>
   </data>
   <data name="Setting_MapShowAboveBelowIndicators" xml:space="preserve">
-    <value>Show Above/Below Indicators</value>
+    <value>顯示上方/下方指示器</value>
   </data>
   <data name="Window_KeyBindSettingsTab" xml:space="preserve">
-    <value>Key Bindings</value>
+    <value>按鍵綁定</value>
   </data>
   <data name="Setting_PackFadePathablesDuringCombat" xml:space="preserve">
-    <value>Fade Markers and Trails While in Combat</value>
+    <value>戰鬥時淡化標記與路徑</value>
   </data>
   <data name="Window_DownloadMarkerPacks" xml:space="preserve">
-    <value>Download Marker Packs</value>
+    <value>下載標記包</value>
   </data>
   <data name="Repo_Download" xml:space="preserve">
-    <value>Download</value>
+    <value>下載</value>
   </data>
   <data name="Repo_Info" xml:space="preserve">
-    <value>Info</value>
-  </data>
-  <data name="Repo_Categories" xml:space="preserve">
-    <value>Categories</value>
+    <value>資訊</value>
   </data>
   <data name="Setting_MapShowTrailsOnCompass" xml:space="preserve">
-    <value>Show Trails on the Minimap</value>
+    <value>於小地圖顯示路徑</value>
   </data>
   <data name="Setting_MapShowTrailsOnFullscreen" xml:space="preserve">
-    <value>Show Trails on Fullscreen Map</value>
+    <value>於全螢幕地圖顯示路徑</value>
   </data>
   <data name="Info_HiddenCategories" xml:space="preserve">
-    <value>Categories hidden because they are for markers on a different map.
+    <value>因這些類別適用於其他地圖的標記，故已隱藏。
 
-Click to view them or you can disable this filter by toggling:
-Pathing Module Settings &gt; Marker Options &gt; {0}.</value>
+點擊以檢視這些類別，或透過下列路徑關閉此篩選功能:
+路徑設定模組 &gt; 標記選項 &gt; {0}。</value>
   </data>
   <data name="Setting_PackMarkerConsentToClipboardDescription" xml:space="preserve">
-    <value>Some markers support copying text to your clipboard (such as waypoints or build templates).
+    <value>部分標記支援將文字複製至剪貼簿(如傳送點或配置模板)。
 
-Always (Default) - Markers can always update your clipboard.  This can occur on interact ({0}) or automatically when you walk in range of the marker.
+總是(預設) - 標記隨時可更新您的剪貼簿。此操作可能於互動時 ({0}) 觸發，
+或在您進入標記範圍時自動執行。
 
-Only When Interacted With - Markers can update your clipboard ONLY when interacted ({0}) with directly.  Markers configured as automatic will require interaction.
+僅於互動時 - 標記僅能在直接互動 ({0}) 時更新您的剪貼簿。
+設定為自動執行的標記，改為需要手動互動才會觸發。
 
-Never - Markers can never update your clipboard.</value>
+從不 - 標記永遠無法更新您的剪貼簿。</value>
   </data>
   <data name="SettingHero_OpenSettings" xml:space="preserve">
-    <value>Open  Settings</value>
+    <value>打開設定</value>
   </data>
   <data name="SettingHero_OpenMarkerPacks" xml:space="preserve">
-    <value>Download  Marker  Packs</value>
+    <value>下載標記包</value>
   </data>
   <data name="SettingHero_OpenSetupGuide" xml:space="preserve">
-    <value>Open  Setup  Guide</value>
+    <value>開啟設定指南</value>
   </data>
   <data name="DonateHero_DonateButton" xml:space="preserve">
-    <value>Donate</value>
+    <value>贊助</value>
   </data>
   <data name="DonateHero_DonateDesc" xml:space="preserve">
-    <value>Consider  helping  Freesnöw  with  server  expenses:</value>
+    <value>歡迎贊助 Freesnöw 以協助支付伺服器費用:</value>
   </data>
   <data name="Setting_MapPathablesEnabled" xml:space="preserve">
-    <value>Show Markers on Maps</value>
+    <value>在地圖上顯示標記</value>
   </data>
   <data name="Setting_MapDrawOpacity" xml:space="preserve">
-    <value>Opacity on Fullscreen Map</value>
+    <value>全螢幕地圖不透明度</value>
   </data>
   <data name="Setting_MiniMapDrawOpacity" xml:space="preserve">
-    <value>Opacity on the Minimap</value>
+    <value>小地圖不透明度</value>
   </data>
   <data name="Setting_MapFadeVerticallyDistantTrailSegments" xml:space="preserve">
-    <value>Fade Trail Segments Which Are High Above or Below</value>
+    <value>淡化高處或低處的路徑段</value>
   </data>
   <data name="Setting_MapShowTooltip" xml:space="preserve">
-    <value>Show Tooltips on Map</value>
+    <value>顯示地圖提示框</value>
   </data>
   <data name="Setting_MapShowTooltipDesc" xml:space="preserve">
-    <value>If enabled, tooltips will be shown on the map when the cursor is over a marker.</value>
+    <value>啟用後，當滑鼠游標停留在標記上時，地圖會顯示相關資訊提示。</value>
   </data>
   <data name="Setting_MapTrailWidth" xml:space="preserve">
-    <value>Trail Width on Maps</value>
+    <value>地圖路徑寬度</value>
   </data>
   <data name="Setting_MapTrailWidthDesc" xml:space="preserve">
-    <value>The thickness of trails shown on the map.</value>
+    <value>設定地圖上顯示的路徑線條粗細。</value>
   </data>
   <data name="Setting_ScriptsEnabled" xml:space="preserve">
-    <value>Enable Lua Scripts</value>
+    <value>啟用 Lua 腳本</value>
   </data>
   <data name="Setting_ScriptsEnabledDesc" xml:space="preserve">
-    <value>If enabled, marker packs may load Lua scripts to provide custom functionality.</value>
+    <value>啟用後，標記包可能會載入 Lua 腳本以提供自訂功能。</value>
   </data>
   <data name="Setting_ScriptsConsoleEnabled" xml:space="preserve">
-    <value>Enable Script Console</value>
+    <value>啟用腳本控制台</value>
   </data>
   <data name="Setting_ScriptsConsoleEnabledDesc" xml:space="preserve">
-    <value>If enabled, the Script Console can be accessed from the Pathing module menu to debug scripts.</value>
+    <value>啟用後，可從路徑設定模組選單存取腳本控制台以進行除錯。</value>
   </data>
   <data name="Setting_KeyBindTogglePathables" xml:space="preserve">
-    <value>Toggle Markers</value>
+    <value>切換標記顯示</value>
   </data>
   <data name="Setting_KeyBindToggleWorldPathables" xml:space="preserve">
-    <value>Toggle Markers in World</value>
+    <value>切換世界標記顯示</value>
   </data>
   <data name="Setting_KeyBindToggleMapPathables" xml:space="preserve">
-    <value>Toggle Markers on Map</value>
+    <value>切換地圖標記顯示</value>
   </data>
   <data name="Setting_KeyBindReloadMarkerPacks" xml:space="preserve">
-    <value>Reload Marker Packs</value>
+    <value>重新載入標記包</value>
   </data>
   <data name="Setting_PackWorldPathablesEnabled" xml:space="preserve">
-    <value>Show Markers in World</value>
+    <value>在世界中顯示標記</value>
   </data>
   <data name="Setting_PackMarkerScale" xml:space="preserve">
-    <value>Marker Scale</value>
+    <value>標記縮放比例</value>
   </data>
   <data name="Setting_PackMarkerScaleDesc" xml:space="preserve">
-    <value>Modifies the size of markers in the world.</value>
+    <value>調整標記在世界中的顯示大小。</value>
   </data>
   <data name="Setting_PackFadeTrailsAroundCharacterDesc" xml:space="preserve">
-    <value>If enabled, trails will be faded out around your character to make it easier to see your character.</value>
+    <value>啟用後，路徑在角色周圍將會淡出，讓您能更清楚地看見角色。</value>
   </data>
   <data name="Setting_PackFadePathablesDuringCombatDesc" xml:space="preserve">
-    <value>If enabled, markers and trails will be hidden while you're in combat to avoid obscuring the fight.</value>
+    <value>啟用後，戰鬥期間將隱藏標記與路徑，避免遮擋戰鬥視野。</value>
   </data>
   <data name="Setting_PackFadeMarkersBetweenCharacterAndCameraDesc" xml:space="preserve">
-    <value>If enabled, markers will be drawn with less opacity if they are directly between your character and the camera to avoid obscuring your vision.</value>
+    <value>啟用後，若標記位於角色與攝影機視角之間，會降低其不透明度，避免
+遮擋視線。</value>
   </data>
   <data name="Setting_PackAllowMarkersToAutomaticallyHideDesc" xml:space="preserve">
-    <value>If enabled, markers and trails may hide themselves as a result of interactions, API data, current festival, etc.  Disabling this feature forces all markers on the map to be shown.</value>
+    <value>啟用後，標記與路徑可能會因互動、API 資料、目前節慶等因素自動隱藏。
+停用此功能將強制顯示地圖上的所有標記。</value>
   </data>
   <data name="Setting_PackInfoDisplayMode" xml:space="preserve">
-    <value>Marker Info Display Mode</value>
+    <value>標記資訊顯示模式</value>
   </data>
   <data name="Setting_PackInfoDisplayModeDesc" xml:space="preserve">
-    <value>Default - Popups with extra info will show when you are near certain markers.
+    <value>預設 - 當您靠近特定標記時，會顯示包含額外資訊的彈出視窗。
 
-Without Background - Extra info will show when you are near certain markers, but there won't be a background behind the text.
+無背景 - 當您靠近特定標記時，會顯示額外資訊，但文字後方不會有背景框。
 
-Never Display - Markers will not show popup info text on your screen.</value>
+永不顯示 - 畫面上將不會顯示標記的彈出資訊文字。</value>
   </data>
   <data name="Setting_PackAllowInteractIcon" xml:space="preserve">
-    <value>Allow Markers to Show Interact Gear On-Screen</value>
+    <value>允許標記於畫面上顯示互動齒輪</value>
   </data>
   <data name="Setting_PackAllowInteractIconDesc" xml:space="preserve">
-    <value>If enabled, interactable markers will show a small gear icon on-screen to show what the interaction will do.</value>
+    <value>啟用後，可互動標記將會在螢幕上顯示一個小齒輪圖示，以標示該互動的
+功能效果。</value>
   </data>
   <data name="Setting_PackAllowMarkersToAnimateDesc" xml:space="preserve">
-    <value>Allows animations such as 'bounce' and trail movements.</value>
+    <value>允許標記執行如'彈跳'或路徑移動等動畫效果。</value>
   </data>
   <data name="Setting_PackEnableSmartCategoryFilter" xml:space="preserve">
-    <value>Enable Smart Categories</value>
+    <value>啟用智慧分類過濾</value>
   </data>
   <data name="Setting_PackEnableSmartCategoryFilterDesc" xml:space="preserve">
-    <value>If a category doesn't contain markers or trails relevant to the current map, the category is hidden.</value>
+    <value>若分類中不包含與當前地圖相關的標記或路徑，將隱藏該分類。</value>
   </data>
   <data name="Setting_PackShowWhenCategoriesAreFiltered" xml:space="preserve">
-    <value>Indicate When Categories Are Hidden</value>
+    <value>顯示分類已隱藏的提示</value>
   </data>
   <data name="Setting_PackShowWhenCategoriesAreFilteredDesc" xml:space="preserve">
-    <value>Shows a note at the bottom of the menu indicating if categories have been hidden.  Clicking the note will show the hidden categories temporarily.</value>
+    <value>在選單底部顯示提示，告知您是否有分類被隱藏。點擊提示可暫時顯示
+被隱藏的分類。</value>
   </data>
   <data name="Setting_PackTruncateLongCategoryNames" xml:space="preserve">
-    <value>Truncate Long Category Names</value>
+    <value>截斷過長的分類名稱</value>
   </data>
   <data name="Setting_PackTruncateLongCategoryNamesDesc" xml:space="preserve">
-    <value>Shortens long category names so that more nested menus can be shown on screen.</value>
+    <value>縮短過長的分類名稱，以便在畫面上顯示更多巢狀選單。</value>
   </data>
   <data name="Setting_PackShowHiddenMarkersReducedOpacity" xml:space="preserve">
-    <value>Temporarily Show Ghost Markers</value>
+    <value>暫時顯示隱藏標記(幽靈模式)</value>
   </data>
   <data name="Setting_PackShowHiddenMarkersReducedOpacityDesc" xml:space="preserve">
-    <value>Shows hidden markers with a reduced opacity allowing you to unhide them.  This setting automatically disables on startup.</value>
+    <value>以低不透明度顯示隱藏的標記，方便您將其取消隱藏。此設定會在啟動時
+自動關閉。</value>
   </data>
   <data name="Setting_PackShowTooltipsOnAchievements" xml:space="preserve">
-    <value>Show Tooltips for Achievements</value>
+    <value>顯示成就提示工具</value>
   </data>
   <data name="Setting_PackShowTooltipsOnAchievementsDesc" xml:space="preserve">
-    <value>Warning: This can cause performance issues when browsing categories.</value>
+    <value>警告: 瀏覽分類時，此功能可能會導致效能問題。</value>
   </data>
   <data name="Window_CategoryTreeTab" xml:space="preserve">
-    <value>Category Explorer</value>
+    <value>分類瀏覽器</value>
   </data>
   <data name="Window_ScriptSettingsTab" xml:space="preserve">
-    <value>Script Options</value>
+    <value>腳本選項</value>
   </data>
   <data name="Setting_PacksNotInitializedLabel" xml:space="preserve">
-    <value>Please enter the game to load the marker packs.</value>
+    <value>請進入遊戲以載入標記包。</value>
   </data>
   <data name="Setting_PacksNotLoadedLabel" xml:space="preserve">
-    <value>No marker packs have been loaded.</value>
+    <value>未載入任何標記包。</value>
   </data>
   <data name="Setting_SearchStatusLabel" xml:space="preserve">
-    <value>No categories found...</value>
+    <value>找不到分類...</value>
   </data>
   <data name="Setting_HelpTextLabel" xml:space="preserve">
-    <value>Right click on categories for options.</value>
+    <value>右鍵點擊分類以顯示選項。</value>
   </data>
   <data name="Setting_OnlyShowCurrentMap" xml:space="preserve">
-    <value>Current Map Only</value>
+    <value>僅顯示當前地圖</value>
   </data>
   <data name="Setting_OnlyShowCurrentMapDesc" xml:space="preserve">
-    <value>If checked, only marker packs with marker or trails for the current map will be shown.</value>
+    <value>勾選後，僅顯示包含當前地圖標記或路徑的標記包。</value>
   </data>
   <data name="Setting_CategoryTreeSearchBox" xml:space="preserve">
-    <value>Search markers or insert path...</value>
+    <value>搜尋標記或輸入路徑...</value>
   </data>
   <data name="Setting_PackRepoSearchBox" xml:space="preserve">
-    <value>Search marker packs...</value>
+    <value>搜尋標記包...</value>
   </data>
   <data name="Setting_KeepUpdatedCheckbox" xml:space="preserve">
-    <value>Keep Updated</value>
+    <value>自動保持更新</value>
   </data>
   <data name="Setting_KeepUpdatedCheckboxDesc" xml:space="preserve">
-    <value>If checked, new pack versions will be automatically downloaded on launch.</value>
+    <value>勾選後，將於啟動時自動下載最新的標記包版本。</value>
   </data>
   <data name="MarkerPackHero_LastUpdateStr" xml:space="preserve">
-    <value>Updated {0}</value>
+    <value>更新於 {0}</value>
   </data>
   <data name="MarkerPackHero_BasicTooltipText" xml:space="preserve">
-    <value>Approx. {0:n0} downloads per day</value>
+    <value>每日約 {0:n0} 次下載</value>
   </data>
   <data name="MarkerPackHero_DeleteButton" xml:space="preserve">
-    <value>Delete</value>
+    <value>刪除</value>
   </data>
   <data name="MarkerPackHero_IsDownloading" xml:space="preserve">
-    <value>Downloading...</value>
+    <value>下載中...</value>
   </data>
   <data name="MarkerPackHero_Download" xml:space="preserve">
-    <value>Download</value>
+    <value>下載</value>
   </data>
   <data name="MarkerPackHero_IsLoading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>讀取中...</value>
   </data>
   <data name="MarkerPackHero_Update" xml:space="preserve">
-    <value>Update</value>
+    <value>更新</value>
   </data>
   <data name="MarkerPackHero_UpToDate" xml:space="preserve">
-    <value>Up to Date</value>
+    <value>最新版本</value>
   </data>
   <data name="PackInitiator_AllMarkers" xml:space="preserve">
-    <value>All Markers</value>
+    <value>所有標記</value>
   </data>
   <data name="PackInitiator_ManagePacks" xml:space="preserve">
-    <value>Manage Marker Packs</value>
+    <value>管理標記包</value>
   </data>
   <data name="PackInitiator_ReloadMarkers" xml:space="preserve">
-    <value>Reload Marker Packs</value>
+    <value>重新載入標記包</value>
   </data>
   <data name="PackInitiator_UnloadMarkers" xml:space="preserve">
-    <value>Unload Marker Packs</value>
+    <value>卸載標記包</value>
   </data>
   <data name="PackInitiator_DownloadMarkerPacks" xml:space="preserve">
-    <value>Download Marker Packs</value>
+    <value>下載標記包</value>
   </data>
   <data name="PackInitiator_AlwaysLoad" xml:space="preserve">
-    <value>Always Load</value>
+    <value>總是自動載入</value>
   </data>
   <data name="PackInitiator_LoadManuallyIsLoaded" xml:space="preserve">
-    <value>Loaded in {0} milliseconds</value>
+    <value>已載入(耗時 {0} 毫秒)</value>
   </data>
   <data name="PackInitiator_LoadManually" xml:space="preserve">
-    <value>Load Marker Pack</value>
+    <value>載入標記包</value>
   </data>
   <data name="PackInitiator_DeletePack" xml:space="preserve">
-    <value>Delete Pack</value>
+    <value>刪除標記包</value>
   </data>
   <data name="Tree_ShowAllSkippedCategories" xml:space="preserve">
-    <value>{0} hidden (click to show)</value>
+    <value>{0} 個隱藏項目 (點擊顯示)</value>
   </data>
   <data name="Tree_AllMarkers" xml:space="preserve">
-    <value>All Markers</value>
+    <value>所有標記</value>
   </data>
   <data name="PathingModule_ScriptConsole" xml:space="preserve">
-    <value>Script Console</value>
+    <value>腳本控制台</value>
   </data>
   <data name="PathingModule_OpenSettings" xml:space="preserve">
-    <value>Pathing Module Settings</value>
+    <value>Pathing 模組設定</value>
   </data>
   <data name="CategoryContextMenuStrip_SearchMarker" xml:space="preserve">
-    <value>Search</value>
+    <value>搜尋</value>
   </data>
   <data name="CategoryContextMenuStrip_ShowAllSkippedCategories" xml:space="preserve">
-    <value>{0} Categories Are Hidden</value>
+    <value>已隱藏 {0} 個分類</value>
   </data>
   <data name="PathingGlobal_Menu" xml:space="preserve">
-    <value>Scripts</value>
+    <value>腳本</value>
   </data>
   <data name="PackInitiator_LoadingIndicator1" xml:space="preserve">
-    <value>Loading marker packs...</value>
+    <value>正在載入標記包...</value>
   </data>
   <data name="PackInitiator_LoadingIndicator2" xml:space="preserve">
-    <value>Loading {0}...</value>
+    <value>正在載入 {0}...</value>
   </data>
   <data name="PackInitiator_LoadingIndicator3" xml:space="preserve">
-    <value>Finalizing marker collection...</value>
+    <value>正在整理標記集合...</value>
   </data>
   <data name="PackInitiator_LoadingIndicator4" xml:space="preserve">
-    <value>Loading scripts...</value>
+    <value>正在載入腳本...</value>
   </data>
   <data name="MarkerPackRepo_Progress" xml:space="preserve">
-    <value>Requesting latest list of marker packs...</value>
+    <value>正在請求最新的標記包列表...</value>
   </data>
   <data name="ModuleSettings_Always" xml:space="preserve">
-    <value>Always</value>
+    <value>總是</value>
   </data>
   <data name="ModuleSettings_OnlyWhenInteractedWith" xml:space="preserve">
-    <value>Only When Interacted With</value>
+    <value>僅於互動時</value>
   </data>
   <data name="ModuleSettings_Never" xml:space="preserve">
-    <value>Never</value>
+    <value>從不</value>
   </data>
   <data name="ModuleSettings_Default" xml:space="preserve">
-    <value>Default</value>
+    <value>預設</value>
   </data>
   <data name="ModuleSettings_WithoutBackground" xml:space="preserve">
-    <value>Without Background</value>
+    <value>無背景</value>
   </data>
   <data name="ModuleSettings_NeverDisplay" xml:space="preserve">
-    <value>Never Display</value>
+    <value>永不顯示</value>
   </data>
 </root>

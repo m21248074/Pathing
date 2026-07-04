@@ -399,7 +399,7 @@ namespace BhModule.Community.Pathing.UI.Controls.TreeNodes
 
             if (skipped > 0 && this.Parent != null && _packState.UserConfiguration.PackShowWhenCategoriesAreFiltered.Value)
             {
-                var showAllSkippedCategories = new LabelNode($"{skipped} hidden (click to show)", AsyncTexture2D.FromAssetId(358463))
+                var showAllSkippedCategories = new LabelNode(string.Format(Strings.Tree_ShowAllSkippedCategories, skipped), AsyncTexture2D.FromAssetId(358463))
                 {
                     Clickable = true,
                     Width = this.Parent.Width - 14,

@@ -25,7 +25,7 @@ namespace BhModule.Community.Pathing.UI.Views {
         protected override void Build(Container buildPanel) {
             var settingsHero = new SettingHero() {
                 Icon = AsyncTexture2D.FromAssetId(156027),
-                Text = "Open  Settings",
+                Text = Strings.SettingHero_OpenSettings,
                 Size = new Point(buildPanel.Width / 3, buildPanel.Height - 48),
                 Parent = buildPanel
             };
@@ -36,7 +36,7 @@ namespace BhModule.Community.Pathing.UI.Views {
 
             var downloadMpHero = new SettingHero() {
                 Icon = AsyncTexture2D.FromAssetId(543438),
-                Text = "Download  Marker  Packs",
+                Text = Strings.SettingHero_OpenMarkerPacks,
                 Size = new Point(buildPanel.Width / 3, buildPanel.Height - 48),
                 Left = buildPanel.Width / 3,
                 Parent = buildPanel
@@ -48,7 +48,7 @@ namespace BhModule.Community.Pathing.UI.Views {
 
             var guideHero = new SettingHero() {
                 Icon = AsyncTexture2D.FromAssetId(2604584),
-                Text = "Open  Setup  Guide",
+                Text = Strings.SettingHero_OpenSetupGuide,
                 Size = new Point(buildPanel.Width / 3, buildPanel.Height - 48),
                 Left = buildPanel.Width / 3 * 2,
                 Parent = buildPanel

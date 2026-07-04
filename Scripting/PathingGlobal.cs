@@ -68,7 +68,7 @@ public class PathingGlobal : LuaTable {
     public Instance I { get; }
 
     [LuaMember(nameof(Menu))]
-    public Menu Menu { get; } = new("Scripts", null, false, false);
+    public Menu Menu { get; } = new(Strings.PathingGlobal_Menu, null, false, false);
     
     [LuaMember(nameof(Event))]
     public Event Event { get; }

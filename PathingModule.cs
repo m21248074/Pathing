@@ -78,7 +78,7 @@ namespace BhModule.Community.Pathing {
             // Script Console - we only show if it's enabled or if the user is holding down shift.
             if (this.Settings.ScriptsConsoleEnabled.Value || GameService.Input.Keyboard.ActiveModifiers.HasFlag(ModifierKeys.Shift)) {
                 var scriptConsole = new ContextMenuStripItem() {
-                    Text = "Script Console" // TODO: Localize "Script Console"
+                    Text = Strings.PathingModule_ScriptConsole // TODO: Localize "Script Console"
                 };
 
                 scriptConsole.Click += (_, _) => ShowScriptWindow();
@@ -87,7 +87,7 @@ namespace BhModule.Community.Pathing {
 
             // Open Settings
             var openSettings = new ContextMenuStripItem() {
-                Text = "Pathing Module Settings" // TODO: Localize "Pathing Module Settings"
+                Text = Strings.PathingModule_OpenSettings // TODO: Localize "Pathing Module Settings"
             };
 
             openSettings.Click += (_, _) => {
@@ -130,10 +130,10 @@ namespace BhModule.Community.Pathing {
             };
 
             this.CategoryTreeView = new CategoryTreeView(this);
-            this.CategoryTreeTab  = new Tab(AsyncTexture2D.FromAssetId(1654244),                  () => this.CategoryTreeView,                           "Category Explorer");
+            this.CategoryTreeTab  = new Tab(AsyncTexture2D.FromAssetId(1654244),                  () => this.CategoryTreeView,                           Strings.Window_CategoryTreeTab);
             PackSettingsTab       = new Tab(ContentsManager.GetTexture(@"png\156740+155150.png"), () => new SettingsView(this.Settings.PackSettings),    Strings.Window_MainSettingsTab);
             MapSettingsTab        = new Tab(ContentsManager.GetTexture(@"png\157123+155150.png"), () => new SettingsView(this.Settings.MapSettings),     Strings.Window_MapSettingsTab);
-            ScriptSettingsTab     = new Tab(AsyncTexture2D.FromAssetId(156701),                   () => new SettingsView(this.Settings.ScriptSettings),  "Script Options");
+            ScriptSettingsTab     = new Tab(AsyncTexture2D.FromAssetId(156701),                   () => new SettingsView(this.Settings.ScriptSettings),  Strings.Window_ScriptSettingsTab);
             KeybindSettingsTab    = new Tab(ContentsManager.GetTexture(@"png\156734+155150.png"), () => new SettingsView(this.Settings.KeyBindSettings), Strings.Window_KeyBindSettingsTab);
             MarkerRepoTab         = new Tab(AsyncTexture2D.FromAssetId(156909),                   () => new PackRepoView(this),                          Strings.Window_DownloadMarkerPacks);
 

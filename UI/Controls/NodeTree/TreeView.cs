@@ -133,7 +133,7 @@ namespace BhModule.Community.Pathing.UI.Controls.TreeView
 
             _rootNode = new PathingCategoryNode(PackInitiator.PackState, rootCategory, false)
             {
-                Name   = "All Markers",
+                Name   = Strings.Tree_AllMarkers,
                 Width  = this.Width - 30,
                 Parent = this
             };
@@ -207,7 +207,7 @@ namespace BhModule.Community.Pathing.UI.Controls.TreeView
             LabelNode showAllSkippedCategories = null;
 
             if (skipped > 0 && packState.UserConfiguration.PackShowWhenCategoriesAreFiltered.Value) {
-                showAllSkippedCategories = new LabelNode($"{skipped} hidden (click to show)", AsyncTexture2D.FromAssetId(358463))
+                showAllSkippedCategories = new LabelNode(string.Format(Strings.Tree_ShowAllSkippedCategories, skipped), AsyncTexture2D.FromAssetId(358463))
                 {
                     Clickable        = true,
                     Width            = this.Parent.Width - 14,
